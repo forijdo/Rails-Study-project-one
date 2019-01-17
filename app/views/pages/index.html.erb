@@ -1,0 +1,20 @@
+<h1>Ruby on Rails. Study project one. Home page</h1>
+
+<h3>Server time is:</h3>
+
+<%= Time.now %>
+
+<h3>You IP is:</h3>
+
+<%= @remote_addr %>
+
+<h3>HTTP request params</h3>
+
+<table  width="400px">
+    <% @http_request_params.each do |k,v| %>
+        <tr>
+        <td><%= k %></td>
+        <td><%= v.scan(/.{1,80}/).join(' ') %></td>
+        </tr>
+    <% end %>
+</table>
