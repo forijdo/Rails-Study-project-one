@@ -37,3 +37,22 @@ gem 'jquery-rails'
 ```
 ENV['EXECJS_RUNTIME'] = 'Node'
 ```
+
+Для работы с ветками необходимо создать ее 
+
+`git checkout -b "styles"`
+
+Рабоать как обычно, затем
+
+Перейти в мастер
+
+`git checkout master`
+
+Замержить изменения
+
+`git merge styles`
+
+При необходимости удалить ветку
+
+`git branch -D styles`
+
